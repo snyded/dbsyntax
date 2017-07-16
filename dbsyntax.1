@@ -1,0 +1,24 @@
+.\"
+.\" @(#) dbsyntax.1 1.0  93/12/24 20:19:06
+.\"
+.TH DBSYNTAX 1 "dbsyntax 1.0"
+.SH NAME
+dbsyntax \- checks the syntax of SQL statements
+.SH SYNOPSIS
+dbsyntax -d database [files...]
+.SH DESCRIPTION
+.I Dbsyntax
+will check the syntax of SQL statements.  Errors are printed to stdout
+along with the line that caused the error.
+.SH OPTIONS
+.TP
+.B \-d
+database name
+.SH NOTES
+.I Dbsyntax
+requires that an Informix database engine be installed on the machine
+running it.
+.PP
+If a file name is not specified, then stdin is used
+.SH SUPPORT
+Send bug reports to Dave Snyder <dave@snide.com>
